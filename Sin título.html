@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;html lang="es"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;La Ruta del Horno&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">*{</p>
+<p class="p1">margin:0;</p>
+<p class="p1">padding:0;</p>
+<p class="p1">box-sizing:border-box;</p>
+<p class="p1">font-family:Arial,sans-serif;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">body{</p>
+<p class="p1">background:#f4f4f4;</p>
+<p class="p1">color:#333;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">header{</p>
+<p class="p1">background:#b71c1c;</p>
+<p class="p1">color:white;</p>
+<p class="p1">padding:20px;</p>
+<p class="p1">text-align:center;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.hero{</p>
+<p class="p1">background:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200') center/cover;</p>
+<p class="p1">height:400px;</p>
+<p class="p1">display:flex;</p>
+<p class="p1">align-items:center;</p>
+<p class="p1">justify-content:center;</p>
+<p class="p1">text-align:center;</p>
+<p class="p1">color:white;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.hero-content{</p>
+<p class="p1">background:rgba(0,0,0,0.6);</p>
+<p class="p1">padding:30px;</p>
+<p class="p1">border-radius:10px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.btn{</p>
+<p class="p1">display:inline-block;</p>
+<p class="p1">padding:12px 25px;</p>
+<p class="p1">background:#25D366;</p>
+<p class="p1">color:white;</p>
+<p class="p1">text-decoration:none;</p>
+<p class="p1">border-radius:8px;</p>
+<p class="p1">margin-top:15px;</p>
+<p class="p1">font-weight:bold;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">section{</p>
+<p class="p1">padding:40px 20px;</p>
+<p class="p1">max-width:1200px;</p>
+<p class="p1">margin:auto;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">h2{</p>
+<p class="p1">text-align:center;</p>
+<p class="p1">margin-bottom:20px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.menu{</p>
+<p class="p1">display:grid;</p>
+<p class="p1">grid-template-columns:repeat(auto-fit,minmax(250px,1fr));</p>
+<p class="p1">gap:20px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.pizza{</p>
+<p class="p1">background:white;</p>
+<p class="p1">border-radius:10px;</p>
+<p class="p1">overflow:hidden;</p>
+<p class="p1">box-shadow:0 2px 10px rgba(0,0,0,0.1);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.pizza img{</p>
+<p class="p1">width:100%;</p>
+<p class="p1">height:180px;</p>
+<p class="p1">object-fit:cover;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.pizza-info{</p>
+<p class="p1">padding:15px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.precio{</p>
+<p class="p1">color:#b71c1c;</p>
+<p class="p1">font-size:20px;</p>
+<p class="p1">font-weight:bold;</p>
+<p class="p1">margin-top:10px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.promos{</p>
+<p class="p1">display:grid;</p>
+<p class="p1">grid-template-columns:repeat(auto-fit,minmax(250px,1fr));</p>
+<p class="p1">gap:20px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.promo{</p>
+<p class="p1">background:#fff3cd;</p>
+<p class="p1">padding:20px;</p>
+<p class="p1">border-radius:10px;</p>
+<p class="p1">text-align:center;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.transferencia{</p>
+<p class="p1">background:white;</p>
+<p class="p1">padding:25px;</p>
+<p class="p1">border-radius:10px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">footer{</p>
+<p class="p1">background:#222;</p>
+<p class="p1">color:white;</p>
+<p class="p1">text-align:center;</p>
+<p class="p1">padding:20px;</p>
+<p class="p1">margin-top:30px;</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;header&gt;</p>
+<p class="p1">&lt;h1&gt;🍕 La Ruta del Horno&lt;/h1&gt;</p>
+<p class="p1">&lt;p&gt;Pizzas Artesanales Delivery&lt;/p&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section class="hero"&gt;</p>
+<p class="p1">&lt;div class="hero-content"&gt;</p>
+<p class="p1">&lt;h2&gt;Las mejores pizzas directo a tu hogar&lt;/h2&gt;</p>
+<p class="p1">&lt;p&gt;Pedidos por WhatsApp y pago por transferencia&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;a class="btn" href="https://wa.me/56944”337126&gt;</p>
+<p class="p1">Pedir Ahora</p>
+<p class="p1">&lt;/a&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;Nuestro Menú&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="menu"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="pizza"&gt;</p>
+<p class="p1">&lt;img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?w=600"&gt;</p>
+<p class="p1">&lt;div class="pizza-info"&gt;</p>
+<p class="p1">&lt;h3&gt;Margarita&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Mozzarella y albahaca.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="precio"&gt;$8.990&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="pizza"&gt;</p>
+<p class="p1">&lt;img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600"&gt;</p>
+<p class="p1">&lt;div class="pizza-info"&gt;</p>
+<p class="p1">&lt;h3&gt;Pepperoni&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;La clásica favorita.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="precio"&gt;$9.990&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="pizza"&gt;</p>
+<p class="p1">&lt;img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?w=600"&gt;</p>
+<p class="p1">&lt;div class="pizza-info"&gt;</p>
+<p class="p1">&lt;h3&gt;Italiana Chilena&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Jamón, tomate y aceitunas.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="precio"&gt;$10.490&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="pizza"&gt;</p>
+<p class="p1">&lt;img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?w=600"&gt;</p>
+<p class="p1">&lt;div class="pizza-info"&gt;</p>
+<p class="p1">&lt;h3&gt;Cuatro Quesos&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Mezcla premium de quesos.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="precio"&gt;$10.990&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="pizza"&gt;</p>
+<p class="p1">&lt;img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600"&gt;</p>
+<p class="p1">&lt;div class="pizza-info"&gt;</p>
+<p class="p1">&lt;h3&gt;Hawaiana&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Jamón y piña.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="precio"&gt;$10.490&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="pizza"&gt;</p>
+<p class="p1">&lt;img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?w=600"&gt;</p>
+<p class="p1">&lt;div class="pizza-info"&gt;</p>
+<p class="p1">&lt;h3&gt;Suprema&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Pepperoni, jamón y champiñones.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="precio"&gt;$11.990&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="pizza"&gt;</p>
+<p class="p1">&lt;img src="https://images.unsplash.com/photo-1520201163981-8cc95007dd2e?w=600"&gt;</p>
+<p class="p1">&lt;div class="pizza-info"&gt;</p>
+<p class="p1">&lt;h3&gt;Vegetariana&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Verduras frescas.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="precio"&gt;$9.990&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="pizza"&gt;</p>
+<p class="p1">&lt;img src="https://images.unsplash.com/photo-1511689660979-10d2b1aada49?w=600"&gt;</p>
+<p class="p1">&lt;div class="pizza-info"&gt;</p>
+<p class="p1">&lt;h3&gt;La Serena Especial&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Camarón, ajo y mozzarella.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="precio"&gt;$12.990&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="pizza"&gt;</p>
+<p class="p1">&lt;img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600"&gt;</p>
+<p class="p1">&lt;div class="pizza-info"&gt;</p>
+<p class="p1">&lt;h3&gt;Valle del Elqui&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Queso de cabra y aceitunas.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="precio"&gt;$11.990&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="pizza"&gt;</p>
+<p class="p1">&lt;img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=600"&gt;</p>
+<p class="p1">&lt;div class="pizza-info"&gt;</p>
+<p class="p1">&lt;h3&gt;Ruta del Horno&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;Tocino, pepperoni y extra queso.&lt;/p&gt;</p>
+<p class="p1">&lt;div class="precio"&gt;$12.490&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;Promociones&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="promos"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="promo"&gt;</p>
+<p class="p1">&lt;h3&gt;Promo Familiar&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;2 pizzas familiares + bebida&lt;/p&gt;</p>
+<p class="p1">&lt;h2&gt;$24.990&lt;/h2&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="promo"&gt;</p>
+<p class="p1">&lt;h3&gt;Promo Pareja&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;2 pizzas medianas&lt;/p&gt;</p>
+<p class="p1">&lt;h2&gt;$16.990&lt;/h2&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="promo"&gt;</p>
+<p class="p1">&lt;h3&gt;Promo Ruta&lt;/h3&gt;</p>
+<p class="p1">&lt;p&gt;3 pizzas familiares&lt;/p&gt;</p>
+<p class="p1">&lt;h2&gt;$34.990&lt;/h2&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;Pago por Transferencia&lt;/h2&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="transferencia"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Banco:&lt;/strong&gt; MERCADOPAGO&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Tipo:&lt;/strong&gt; Cuenta Vista&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Titular:&lt;/strong&gt; MARCELO CASTILLO GARCIA&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;RUT:&lt;/strong&gt; 20.309.306-3&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;N° Cuenta:&lt;/strong&gt; 1062496569&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; correo@ejemplo.cl&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;p&gt;Después de transferir envía el comprobante por WhatsApp.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;footer&gt;</p>
+<p class="p1">&lt;p&gt;🍕 La Ruta del Horno&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Delivery desde casa&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Lunes a Domingo 18:00 - 24:00&lt;/p&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
