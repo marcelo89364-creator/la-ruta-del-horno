@@ -1,10 +1,247 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>La Ruta del Horno</title>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:#c62828;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+.hero{
+background:#222;
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.boton{
+display:inline-block;
+background:#25D366;
+color:white;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+margin-top:15px;
+}
+
+section{
+padding:40px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.pizza{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.precio{
+color:#c62828;
+font-size:22px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.promos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.promo{
+background:#ffe082;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.transferencia{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+</style>
 </head>
+
 <body>
+
+<header>
 <h1>🍕 La Ruta del Horno</h1>
-<p>Mi pizzería ya está online.</p>
+<p>Pizzas Artesanales Delivery</p>
+</header>
+
+<div class="hero">
+<h2>Las mejores pizzas directo a tu hogar</h2>
+<p>Pedidos por WhatsApp y pago por transferencia</p>
+
+<a class="boton"
+href="https://wa.me/56911111111">
+Pedir por WhatsApp
+</a>
+
+</div>
+
+<section>
+
+<h2>Menú de Pizzas</h2>
+
+<div class="menu">
+
+<div class="pizza">
+<h3>Margarita</h3>
+<p>Mozzarella y albahaca.</p>
+<div class="precio">$8.990</div>
+</div>
+
+<div class="pizza">
+<h3>Pepperoni</h3>
+<p>Pepperoni y mozzarella.</p>
+<div class="precio">$9.990</div>
+</div>
+
+<div class="pizza">
+<h3>Italiana Chilena</h3>
+<p>Tomate, jamón y aceitunas.</p>
+<div class="precio">$10.490</div>
+</div>
+
+<div class="pizza">
+<h3>Cuatro Quesos</h3>
+<p>Mezcla de quesos premium.</p>
+<div class="precio">$10.990</div>
+</div>
+
+<div class="pizza">
+<h3>Hawaiana</h3>
+<p>Jamón y piña.</p>
+<div class="precio">$10.490</div>
+</div>
+
+<div class="pizza">
+<h3>Suprema</h3>
+<p>Jamón, pepperoni y champiñones.</p>
+<div class="precio">$11.990</div>
+</div>
+
+<div class="pizza">
+<h3>Vegetariana</h3>
+<p>Verduras frescas.</p>
+<div class="precio">$9.990</div>
+</div>
+
+<div class="pizza">
+<h3>La Serena Especial</h3>
+<p>Camarón, ajo y mozzarella.</p>
+<div class="precio">$12.990</div>
+</div>
+
+<div class="pizza">
+<h3>Valle del Elqui</h3>
+<p>Queso de cabra y aceitunas negras.</p>
+<div class="precio">$11.990</div>
+</div>
+
+<div class="pizza">
+<h3>Ruta del Horno</h3>
+<p>Tocino, pepperoni y extra queso.</p>
+<div class="precio">$12.490</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Promociones</h2>
+
+<div class="promos">
+
+<div class="promo">
+<h3>Promo Familiar</h3>
+<p>2 pizzas familiares + bebida</p>
+<h2>$24.990</h2>
+</div>
+
+<div class="promo">
+<h3>Promo Pareja</h3>
+<p>2 pizzas medianas</p>
+<h2>$16.990</h2>
+</div>
+
+<div class="promo">
+<h3>Promo Ruta</h3>
+<p>3 pizzas familiares</p>
+<h2>$34.990</h2>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Pago por Transferencia</h2>
+
+<div class="transferencia">
+
+<p><strong>Banco:</strong> TU BANCO</p>
+<p><strong>Titular:</strong> TU NOMBRE</p>
+<p><strong>RUT:</strong> TU RUT</p>
+<p><strong>Cuenta:</strong> TU CUENTA</p>
+<p><strong>Correo:</strong> TU CORREO</p>
+
+<br>
+
+<p>Después de transferir envía el comprobante por WhatsApp.</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>🍕 La Ruta del Horno</p>
+<p>Delivery desde casa</p>
+<p>Lunes a Domingo 18:00 a 23:00</p>
+
+</footer>
+
 </body>
 </html>
